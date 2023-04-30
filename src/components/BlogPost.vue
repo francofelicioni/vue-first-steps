@@ -7,12 +7,14 @@ defineProps({
         default: 'No title'
     },
     id: Number,
-    text: {
+    body: {
         type: String,
         default: 'No description'
     },
     fontColor: String
 })
+
+
 
 const emit = defineEmits(['changeFavoriteName'])
 
@@ -26,10 +28,10 @@ const emit = defineEmits(['changeFavoriteName'])
                 {{ id }} - {{ title }}
             </h5>
             <p :class="`text-${fontColor}-500`" class="text-black text-center text-xl">
-                {{ text }}
+                {{ body }}
             </p>
             <button @click="emit('changeFavoriteName', title)" class="bg-blue-500 font-white font-bold">
-                Change favorite
+                SELECT
             </button>
         </div>
     </div>
