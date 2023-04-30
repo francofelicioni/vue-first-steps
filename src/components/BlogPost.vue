@@ -1,5 +1,15 @@
 <script setup>
-    defineProps(['title', 'id', 'text', 'fontColor' ])
+    // defineProps(['title', 'id', 'text', 'fontColor' ])
+
+    defineProps({
+        title: String,
+        id: Number,
+        text: {
+            type: String,
+            default: 'No description'
+        },
+        fontColor: String
+    })
 </script>
 
 

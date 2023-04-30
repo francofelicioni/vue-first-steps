@@ -11,9 +11,9 @@ import Counter from './components/Counter.vue';
   </div>
 
   <div>
-    <h2 class="text-center text-2xl">Palmares de buri en su historia:</h2>
-    <BlogPost id='1' title="Campeon:" text="Copa merecimiento 2009" color/>
-    <BlogPost id='2' title="Campeon:" text="Copa lloron 2013" fontColor="red"/>
-    <BlogPost id='3' title="Campeon:" text="Copa vi a mi clasico campeon libertadores 2014"/>
+    <h2 class="text-center text-2xl underline">Palmares de buri en su historia:</h2>
+    <BlogPost :id='1' title="Campeon:" text="Copa merecimiento 2009" color/>
+    <BlogPost :id='2' title="Campeon:" text="Copa lloron 2013" fontColor="red"/>
+    <BlogPost :id='3' title="Campeon:" text="Copa vi a mi clasico campeon libertadores 2014"/>
   </div>
 </template>
