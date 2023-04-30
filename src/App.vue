@@ -1,6 +1,16 @@
 <script setup>
+
+import { ref } from 'vue';
 import BlogPost from './components/BlogPost.vue';
 import Counter from './components/Counter.vue';
+
+const posts = ref([
+  {id:1, title: 'Campeonato', text:'Copa merecimiento 2009'},
+  {id:2, title: 'Campeonato', text:'Copa lloron 2013'},
+  {id:3, title: 'Campeonato', text:'Copa equipo diminuto 2014'},
+])
+
+
 </script>
 
 
@@ -12,8 +22,11 @@ import Counter from './components/Counter.vue';
 
   <div>
     <h2 class="text-center text-2xl underline">Palmares de buri en su historia:</h2>
-    <BlogPost :id='1' title="Campeon:" text="Copa merecimiento 2009" color/>
-    <BlogPost :id='2' title="Campeon:" text="Copa lloron 2013" fontColor="red"/>
-    <BlogPost :id='3' title="Campeon:" text="Copa vi a mi clasico campeon libertadores 2014"/>
+    <BlogPost 
+    v-for= 'post in posts'
+    :key='post.id'
+    :title="post.title"
+    :text="post.text"
+    ></BlogPost>
   </div>
 </template>
