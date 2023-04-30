@@ -1,6 +1,6 @@
 <script setup>
 import { ref } from 'vue';
-const counter = ref(0)
+const counter = ref(50)
 const increment = () => { counter.value++ }
 
 </script>
