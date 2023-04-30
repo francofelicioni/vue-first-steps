@@ -13,6 +13,9 @@ defineProps({
     },
     fontColor: String
 })
+
+const emit = defineEmits(['changeFavoriteName'])
+
 </script>
 
 
@@ -25,7 +28,7 @@ defineProps({
             <p :class="`text-${fontColor}-500`" class="text-black text-center text-xl">
                 {{ text }}
             </p>
-            <button @click="$emit('changeFavorite', title)" class="bg-blue-500 font-white font-bold">
+            <button @click="emit('changeFavoriteName', title)" class="bg-blue-500 font-white font-bold">
                 Change favorite
             </button>
         </div>

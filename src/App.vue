@@ -28,7 +28,7 @@ const changeFavorite = (title) => {
     :key='post.id'
     :title="post.title"
     :text="post.text"
-    @changeFavorite="changeFavorite"
+    @changeFavoriteName="changeFavorite"
     ></BlogPost>
   </div>
 </template>
