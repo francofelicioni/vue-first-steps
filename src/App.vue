@@ -4,6 +4,8 @@ import Counter from './components/Counter.vue';
 
 
 <template>
-  <h1> APP</h1>
-  <Counter />
+  <div  class="">
+    <h1 class="mb-10 text-4xl m-3 text-center w-fit"> DAYS WITHOUT HURACAN CAMPEON</h1>
+    <Counter />
+  </div>
 </template>
